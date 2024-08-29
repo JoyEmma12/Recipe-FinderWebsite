@@ -1,0 +1,64 @@
+.action-header {
+  font-family: var(--font-header);
+}
+.action-container {
+  width: 100%;
+  padding: 10px;
+  background: url("./images/blob-haikei.png") no-repeat center center;
+  background-size: cover;
+}
+.action-img {
+  width: 550px;
+  height: 550px;
+  /* height: 40px; */
+  /* border-radius: 50%; */
+}
+.action-content {
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+}
+.action-subcontent p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--font-texts);
+}
+
+.signup-btn {
+  z-index: 1;
+  position: relative;
+  font-size: 16px;
+  font-family: var(--font-header);
+  color: white;
+  padding: 10px 65px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 3px solid var(--bg-color);
+  background-color: var(--tetiary-color);
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+.signup-btn::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 2em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  transform-origin: center;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+.signup-btn:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+.signup-btn:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}

@@ -1,0 +1,106 @@
+.Search-container {
+  max-width: 100%;
+  /* margin: auto; */
+  /* position: relative; */
+  /* box-shadow: 1px 1px 6px black; */
+  /* padding: 50px; */
+  background: var(--bg-color);
+}
+
+.search-input {
+  padding: 10px;
+  padding-left: 4%;
+  width: 400px;
+  border-radius: 25px;
+  border: 2px solid var(--tetiary-color);
+  font-size: 20px;
+  /* box-shadow: 1px 1px 6px rgba(134, 134, 134, 0.774); */
+  background-color: #fff;
+}
+.search-btn {
+  width: 100px;
+  padding: 13px;
+  font-weight: 500;
+  font-family: var(--font-texts);
+  margin-left: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--tetiary-color);
+}
+.categories-search {
+  color: rgba(25, 24, 24, 0.844);
+}
+.categories-search li {
+  border: none;
+  background-color: inherit;
+}
+
+.categories-search li {
+  padding: 5px;
+  border-radius: 5px;
+}
+.categories-search li a {
+  text-decoration: none;
+  color: inherit;
+  /* color: rgba(25, 24, 24, 0.844); */
+}
+
+/* Searchpage.css */
+.dropdown-menu {
+  display: flex;
+  flex-wrap: wrap;
+  /* max-width: 100%; */
+}
+
+.dropdown-menu > li {
+  flex: 1 1 200px; /* Adjust the width of each section */
+  margin: 10px; /* Add some spacing between sections */
+}
+
+.dropdown-item {
+  white-space: normal; /* Prevent text overflow */
+  padding: 10px;
+}
+.search-filters {
+  margin: auto;
+}
+
+/* searchresultstyling */
+.recipesearch-results,
+.cusine-results {
+  width: 100%;
+  padding: 5%;
+}
+.recipesearch-item {
+  width: 25%;
+  padding: 18px;
+  box-shadow: 1px 1px 6px #00000035;
+  border-radius: 8px;
+}
+.searchresult-titles,
+.cusine-titles {
+  font-family: var(--font-texts);
+  /* width: 100%; */
+}
+.getRecipe-btn {
+  border: 2px solid var(--tetiary-color);
+  background-color: inherit;
+  border-radius: 8px;
+  width: 200px;
+  padding: 8px;
+  font-weight: 500;
+  color: var(--tetiary-color);
+  font-size: 18px;
+  margin: auto;
+}
+.getRecipe-btn:hover {
+  background-color: var(--tetiary-color);
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+
+.recipetitle h3 {
+    color: var(--tetiary-color);
+    font-family: var(--font-header);
+}

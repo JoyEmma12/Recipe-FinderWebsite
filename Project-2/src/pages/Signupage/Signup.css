@@ -1,0 +1,58 @@
+.signup-container {
+  width: 100%;
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(217, 215, 215, 0.892);
+}
+.signup-imgcontainer img {
+  width: 500px;
+  border-radius: 8px;
+}
+.form-header h3 {
+  font-family: var(--font-header);
+  font-weight: bold;
+}
+.form-header h5 {
+  font-family: var(--font-texts);
+  font-weight: 500;
+  font-size: 16px;
+}
+input {
+  width: 500px;
+  padding: 10px;
+  border: 2px solid var(--tetiary-color);
+  outline: none;
+  background-color: inherit;
+  border-radius: 10px;
+}
+.signup-formcontainer {
+  font-family: var(--font-texts);
+  margin-top: 8%;
+}
+.creatacct-btn {
+  margin: auto;
+}
+.option-text .line hr {
+  /* display: inline; */
+  width: 150px;
+  height: 2px;
+  background-color: black;
+}
+.otherOption-btn .google-btn {
+  padding: 10px;
+  background-color: inherit;
+  border: 2px solid var(--tetiary-color);
+  color: var(--tetiary-color);
+  width: 200px;
+  font-family: var(--font-texts);
+  border-radius: 8px;
+}
+.otherOption-btn .google-btn:hover {
+    background-color: var(--tetiary-color);
+    color: #fff;
+}
+.link {
+  text-decoration: none;
+  color: var(--tetiary-color);
+}

@@ -1,0 +1,95 @@
+.About-container {
+  width: 100%;
+  background-color: var(--bg-color);
+}
+.about-hero {
+  width: 100%;
+}
+.about-img img {
+  width: 500px;
+  border-radius: 35px;
+}
+.about-content h3 {
+  font-family: var(--font-header);
+  font-size: 35px;
+  font-weight: 700;
+}
+.about-content h4 {
+  font-size: 20px;
+  font-family: var(--font-texts);
+}
+.about-content p {
+  font-size: 14px;
+  font-family: var(--font-texts);
+}
+.missionvision-title h3 {
+  font-family: var(--font-header);
+  font-size: 25px;
+  font-weight: 700;
+}
+.section-container {
+  width: 80%;
+  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+.mission-container,
+.vision-container {
+  width: 40%;
+  box-shadow: 1px 1px 8px #fcb865e8;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.mission-icon {
+  font-size: 40px;
+  color: var(--tetiary-color);
+}
+.icon-contain h4 {
+  color: var(--tetiary-color);
+}
+.mission-content p,
+.vision-content p {
+  font-family: var(--font-texts);
+  font-size: 16px;
+  font-weight: 500;
+}
+.team-container {
+  width: 100%;
+}
+.team-subcontainer {
+  width: 80%;
+}
+.team-subcontainer img {
+  width: 500px;
+  border-radius: 35px;
+}
+.team-subcontainer p {
+  font-family: var(--font-texts);
+  font-weight: 500;
+  font-size: 15px;
+}
+.the-teams {
+  width: 100%;
+  padding: 8%;
+}
+.team-item {
+  width: 30%;
+  /* padding: 20px; */
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--tetiary-color);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.271);
+}
+.team-img {
+  width: 281px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.team-info {
+    padding: 5px;
+    margin: 10px;
+}

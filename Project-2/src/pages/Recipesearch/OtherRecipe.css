@@ -1,0 +1,4 @@
+.recipetitle h3 {
+    color: var(--tetiary-color);
+    font-family: var(--font-header);
+}
