@@ -36,8 +36,11 @@
   color: white;
 }
 .loginbtn .login-link:hover {
-    color: #161616;
+  color: #161616;
 }
 .loginbtn:hover::before {
   transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+}
+.loginimg-container img {
+  width: 100%;
 }

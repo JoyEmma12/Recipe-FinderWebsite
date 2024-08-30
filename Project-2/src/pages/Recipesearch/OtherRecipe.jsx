@@ -44,7 +44,7 @@ const OtherRecipe = () => {
   return (
     <div className="otherRecipe-container container">
       <div className=" recipetitle">
-        <h3 className=" fw-bold fs-3">Chefs Choice Curated Recipe Just for You</h3>
+        <h3 className=" fw-bold fs-3 text-sm-center">Chefs Choice Curated Recipe Just for You</h3>
       </div>
       <div className=" d-flex flex-lg-row flex-wrap align-items-center justify-content-center gap-3 recipe-grids">
         {recommedation.map((items) => {
@@ -60,7 +60,7 @@ const OtherRecipe = () => {
                 />
               </div>
               <div className="searchresult-titles">
-                <h5 className="fs-5 fw-medium text-center">{items.title}</h5>
+                <h5 className="fw-medium text-center">{items.title}</h5>
                 <Link to={`/recipe/${items.id}`}>
                   <button className="getRecipe-btn">Get Recipe</button>
                 </Link>

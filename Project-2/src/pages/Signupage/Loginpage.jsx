@@ -24,7 +24,7 @@ const Loginpage = () => {
     setUserLogin({ ...userlogin, [name]: value });
   };
   return (
-    <div className=" container d-flex flex-lg-row flex-sm-column align-items-sm-center justify-content-between gap-5 signup-container">
+    <div className=" container d-flex flex-lg-row flex-sm-column align-items-sm-center justify-content-between gap-2 signup-container">
       <div className="signup-formcontainer">
         <form className=" d-flex flex-column  gap-2" onSubmit={handleLogin}>
           <div className=" text-center text-black p-2 form-header">
@@ -59,9 +59,9 @@ const Loginpage = () => {
             />
           </div>
           <div className="creatacct-btn">
-            <button className="loginbtn">
-              <Link to="/searchpage" className=" text-decoration-none login-link">Login</Link>
-            </button>
+            <Link to="/searchpage" className=" text-decoration-none login-link">
+              <button className="loginbtn">Login</button>
+            </Link>
           </div>
         </form>
         <div className="other-option">
@@ -69,7 +69,7 @@ const Loginpage = () => {
             <span className="line">
               <hr></hr>
             </span>
-            <span>or sign up with</span>
+            <span className="mini-text">or sign up with</span>
             <span className="line">
               <hr></hr>
             </span>
@@ -96,7 +96,7 @@ const Loginpage = () => {
           </Link>
         </p>
       </div>
-      <div className="signup-imgcontainer">
+      <div className="signup-imgcontainer loginimg-container">
         <img src={loginimg} alt="signup-image" />
       </div>
     </div>

@@ -194,7 +194,7 @@ const Searchpage = () => {
       </div>
 
       <form
-        className=" container d-flex flex-row align-items-center justify-content-center m-auto"
+        className=" container d-flex flex-lg-row flex-sm-column align-items-center justify-content-center m-auto search-form"
         onSubmit={handleSearch}>
         <input
           type="search"
@@ -208,7 +208,7 @@ const Searchpage = () => {
       </form>
 
       <div className="search-filters">
-        <form onSubmit={handleCategory}>
+        <form onSubmit={handleCategory} className="category-form">
           <h5>REFINE SEARCH BY CATEGORIES</h5>
           {/* <input
             type="search"
@@ -283,7 +283,7 @@ const Searchpage = () => {
               </li>
             </ul>
           </div>
-          <button className="search-btn">Search</button>
+          <button className="search-btn categories-btn">Search</button>
         </form>
       </div>
       {loading ? (
@@ -293,9 +293,9 @@ const Searchpage = () => {
           {searchResults.length > 0 && (
             <div className="container">
               <div className="recipetitle">
-                <h3 className=" fw-bold fs-3">Search results</h3>
+                <h3 className=" fw-bold fs-3 text-sm-center">Search results</h3>
               </div>
-              <div className="d-flex flex-lg-row flex-wrap align-items-center justify-content-center gap-3  recipesearch-results">
+              <div className="d-flex flex-lg-row  flex-wrap align-items-center justify-content-center gap-3  recipesearch-results">
                 {searchResults.map((searchitem) => {
                   return (
                     <div
@@ -308,11 +308,13 @@ const Searchpage = () => {
                           className="w-100 rounded"
                         />
                       </div>
-                      <div className="searchresult-titles">
+                      <div className="searchresult-titles text-center">
                         <h5 className="fs-5 fw-medium text-center">
                           {searchitem.title}
                         </h5>
-                        <Link to={`/recipe/${searchitem.id}`}>
+                        <Link
+                          to={`/recipe/${searchitem.id}`}
+                          className="getRecipe">
                           <button className="getRecipe-btn">Get Recipe</button>
                         </Link>
                       </div>
@@ -325,7 +327,9 @@ const Searchpage = () => {
           {categoryResult.length > 0 && (
             <div className=" container">
               <div className="recipetitle">
-                <h3 className=" fw-bold fs-3">Cuisine Results</h3>
+                <h3 className=" fw-bold fs-3 text-sm-center">
+                  Cuisine Results
+                </h3>
               </div>
               <div className="d-flex flex-lg-row flex-wrap align-items-center justify-content-center gap-3 cusine-results">
                 {categoryResult.map((result) => {
@@ -357,7 +361,9 @@ const Searchpage = () => {
           {mealResult.length > 0 && (
             <div className="container">
               <div className="recipetitle">
-                <h3 className=" fw-bold fs-3">Meal type results</h3>
+                <h3 className=" fw-bold fs-3 text-sm-center">
+                  Meal type results
+                </h3>
               </div>
               <div className="d-flex flex-lg-row flex-wrap align-items-center justify-content-center gap-3 cusine-results">
                 {mealResult.map((type) => {
@@ -389,7 +395,7 @@ const Searchpage = () => {
           {dietResult.length > 0 && (
             <div className="container">
               <div className="recipetitle">
-                <h3 className=" fw-bold fs-3">Diets Results</h3>
+                <h3 className=" fw-bold fs-3 text-sm-center">Diets Results</h3>
               </div>
               <div className="d-flex flex-lg-row flex-wrap align-items-center justify-content-center gap-3 cusine-results">
                 {dietResult.map((dietype) => {

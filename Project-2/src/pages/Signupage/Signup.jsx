@@ -98,7 +98,7 @@ const Signup = () => {
             <span className="line">
               <hr></hr>
             </span>
-            <span>or sign up with</span>
+            <span className="mini-text">or sign up with</span>
             <span className="line">
               <hr></hr>
             </span>
