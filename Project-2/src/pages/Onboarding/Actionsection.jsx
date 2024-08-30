@@ -12,20 +12,18 @@ const Actionsection = () => {
           recommendations.
         </p>
       </div>
-      <div className="d-flex flex-lg-row flex-sm-column align-items-center justify-content-between gap-5 action-content">
-        <div className="d-flex flex-lg-row flex-sm-column align-items-center justify-content-between gap-5 actionimg-container">
-          <img src={kitchenimage3} className="action-img" alt="actionimg" />
+      <div className="d-flex flex-lg-row flex-sm-column flex-md-column align-items-center justify-content-between gap-5 action-content">
+        <img src={kitchenimage3} className="action-img" alt="actionimg" />
 
-          <div className="action-subcontent">
-            <p>
-              Dont miss out on the latest recipes and cooking tips. Join our
-              community and start your culinary journey today!
-            </p>
-            <div className="btns">
-              <Link to="/signup">
-                <button className=" shadow signup-btn">Signup</button>
-              </Link>
-            </div>
+        <div className="action-subcontent">
+          <p>
+            Dont miss out on the latest recipes and cooking tips. Join our
+            community and start your culinary journey today!
+          </p>
+          <div className="btns">
+            <Link to="/signup">
+              <button className=" shadow signup-btn">Signup</button>
+            </Link>
           </div>
         </div>
       </div>

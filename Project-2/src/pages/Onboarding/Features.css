@@ -37,11 +37,19 @@
 @media screen and (max-width: 576px) {
   .features-list {
     flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
   .list-item {
-    width: 45%;
-    max-width: 60%;
+    width: 60%;
+    /* max-width: 60%; */
     /* max-width: 100%; */
+  }
+  .viewrecipe-btn {
+    width: 150px;
+    font-size: 14px;
+    margin: auto;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -54,3 +62,5 @@
         flex-wrap: wrap;
     }
 } */
+@media screen and (max-width: 524px) {
+}

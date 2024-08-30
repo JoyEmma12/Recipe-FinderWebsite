@@ -3,7 +3,8 @@
 }
 .action-container {
   width: 100%;
-  padding: 10px;
+  margin: auto;
+  /* padding: 8px; */
   background: url("./images/blob-haikei.png") no-repeat center center;
   background-size: cover;
 }
@@ -62,3 +63,47 @@
 .signup-btn:hover::before {
   transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
 }
+
+@media screen and (max-width: 576px) {
+  .action-img {
+    width: 100%;
+    height: auto;
+  }
+  .action-content {
+    flex-direction: column;
+  }
+  /* .actionimg-container {
+  margin: auto;
+} */
+  .action-subcontent {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .action-img {
+    width: 70%;
+    height: auto;
+  }
+  .action-subcontent {
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 990px) {
+  .action-img {
+    width: 60%;
+    height: auto;
+  }
+  .action-subcontent {
+    margin: auto;
+    text-align: center;
+  }
+}
+/* @media screen and (min-width: 768px) and (max-width: 992px) {
+   .action-img {
+    width: 90%;
+    height: auto;
+  }
+} */
