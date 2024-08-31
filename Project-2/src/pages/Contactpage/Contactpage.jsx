@@ -29,8 +29,8 @@ const Contactpage = () => {
 
   return (
     <div className="contactus-container">
-      <main className="container d-flex flex-lg-row align-items-center justify-content-center gap-5 contact-subcontainer">
-        <div className="contact-content">
+      <main className="container d-flex flex-lg-row flex-sm-column align-items-center justify-content-center gap-5 contact-subcontainer">
+        <div className="contact-content text-sm-center">
           <h3>Get in Touch with Us</h3>
           <h4>We&apos;re Here to Help</h4>
           <p>
@@ -50,7 +50,7 @@ const Contactpage = () => {
         <form
           className=" d-flex flex-lg-column gap-2 contact-form"
           onSubmit={handleContactForm}>
-          <div className=" d-flex flex-column gap-2 name">
+          <div className=" d-flex flex-lg-column flex-sm-column gap-2 name">
             <label htmlFor="name">Name:</label>
             <input
               type="text"
