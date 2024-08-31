@@ -7,7 +7,7 @@ const OtherRecipe = () => {
 
   const handleRecommendation = async () => {
     try {
-      const apiKey = "b1a06fd725d74b49b8213bc2df530630";
+      const apiKey = "3351aeae7eef4282a984a0190f9289a1";
       const url = `https://api.spoonacular.com/recipes/random?number=6&apiKey=${apiKey}&include-tags=diets,dessert,vegetarian`;
       const response = await fetch(url);
       const data = await response.json();
@@ -44,7 +44,9 @@ const OtherRecipe = () => {
   return (
     <div className="otherRecipe-container container">
       <div className=" recipetitle">
-        <h3 className=" fw-bold fs-3 text-sm-center">Chefs Choice Curated Recipe Just for You</h3>
+        <h3 className=" fw-bold fs-3 text-sm-center">
+          Chefs Choice Curated Recipe Just for You
+        </h3>
       </div>
       <div className=" d-flex flex-lg-row flex-wrap align-items-center justify-content-center gap-3 recipe-grids">
         {recommedation.map((items) => {

@@ -85,7 +85,7 @@ const Searchpage = () => {
     setLoading(false);
     if (selectedCuisine) {
       try {
-        const apiKey = "b1a06fd725d74b49b8213bc2df530630";
+        const apiKey = "3351aeae7eef4282a984a0190f9289a1";
         const categoryurl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&cuisine=${selectedCuisine}`;
         const categoryResponse = await fetch(categoryurl);
         const categoryData = await categoryResponse.json();
@@ -100,7 +100,7 @@ const Searchpage = () => {
       }
     }
     if (selectedMeal) {
-      const apiKey = "b1a06fd725d74b49b8213bc2df530630";
+      const apiKey = "3351aeae7eef4282a984a0190f9289a1";
       const mealUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&type=${selectedMeal}`;
       const mealResponse = await fetch(mealUrl);
       const mealData = await mealResponse.json();
@@ -111,7 +111,7 @@ const Searchpage = () => {
 
     if (selectedDiet) {
       try {
-        const apiKey = "b1a06fd725d74b49b8213bc2df530630";
+        const apiKey = "3351aeae7eef4282a984a0190f9289a1";
         const dietUrl = `https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&diet=${selectedDiet}`;
         const dietResponse = await fetch(dietUrl);
         const dietData = await dietResponse.json();
@@ -134,7 +134,7 @@ const Searchpage = () => {
     if (userSearch.length > 2) {
       setLoading(false);
       try {
-        const apiKey = "b1a06fd725d74b49b8213bc2df530630";
+        const apiKey = "3351aeae7eef4282a984a0190f9289a1";
         const url = `https://api.spoonacular.com/recipes/complexSearch?query=${userSearch}&apiKey=${apiKey}`;
         const response = await fetch(url);
         const data = await response.json();

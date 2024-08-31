@@ -14,7 +14,7 @@ const RecipeDetailsPage = () => {
   useEffect(() => {
     const handleRecipeInfo = async () => {
       try {
-        const apiKey = "b1a06fd725d74b49b8213bc2df530630";
+        const apiKey = "3351aeae7eef4282a984a0190f9289a1";
         const url = `https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&apiKey=${apiKey}`;
         const url2 = `https://api.spoonacular.com/recipes/${id}/ingredientWidget.json?&apiKey=${apiKey}`;
         const url3 = `https://api.spoonacular.com/recipes/${id}/analyzedInstructions?apiKey=${apiKey}`;
