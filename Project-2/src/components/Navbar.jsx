@@ -66,12 +66,12 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/aboutpage">
-              <a href="#">About Us</a>
+              About Us
             </Link>
           </li>
           <li>
             <Link to="/contactpage">
-              <a href="#">Contact Us</a>
+              Contact Us
             </Link>
           </li>
           <li>

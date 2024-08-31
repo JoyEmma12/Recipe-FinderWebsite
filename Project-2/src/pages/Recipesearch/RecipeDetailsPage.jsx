@@ -1,7 +1,8 @@
 // import  from "react";
 import "./RecipeDetailsPage.css";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa6";
 
 const RecipeDetailsPage = () => {
   const [recipeDetails, setRecipeDetails] = useState("");
@@ -13,7 +14,7 @@ const RecipeDetailsPage = () => {
   useEffect(() => {
     const handleRecipeInfo = async () => {
       try {
-        const apiKey = "f7132320b54648c185e459f44ee2fe56";
+        const apiKey = "b1a06fd725d74b49b8213bc2df530630";
         const url = `https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&apiKey=${apiKey}`;
         const url2 = `https://api.spoonacular.com/recipes/${id}/ingredientWidget.json?&apiKey=${apiKey}`;
         const url3 = `https://api.spoonacular.com/recipes/${id}/analyzedInstructions?apiKey=${apiKey}`;
@@ -43,9 +44,16 @@ const RecipeDetailsPage = () => {
     handleRecipeInfo();
   }, [id]);
 
+  // const handleBack = () => {
+
+  // }
+
   return (
     <div className="recipe-details-container">
       <div className="recipe-details-subcontainer">
+        <Link to="/searchpage">
+          <FaArrowLeft className="backarrow" />
+        </Link>
         <div className=" d-flex flex-column align-items-center gap-2 recipeintro-container">
           <h1 className="fw-bold fs-1">{recipeDetails.title}</h1>
           <img

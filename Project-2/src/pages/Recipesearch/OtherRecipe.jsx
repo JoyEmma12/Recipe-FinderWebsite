@@ -7,7 +7,7 @@ const OtherRecipe = () => {
 
   const handleRecommendation = async () => {
     try {
-      const apiKey = "f7132320b54648c185e459f44ee2fe56";
+      const apiKey = "b1a06fd725d74b49b8213bc2df530630";
       const url = `https://api.spoonacular.com/recipes/random?number=6&apiKey=${apiKey}&include-tags=diets,dessert,vegetarian`;
       const response = await fetch(url);
       const data = await response.json();

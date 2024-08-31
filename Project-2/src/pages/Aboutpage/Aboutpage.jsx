@@ -7,7 +7,6 @@ import team1 from "./images/team1.jpg";
 import team2 from "./images/team2.jpg";
 import team3 from "./images/team3.jpg";
 
-
 const teamList = [
   {
     id: 1,
@@ -58,7 +57,7 @@ const Aboutpage = () => {
             Guided by Passion, Driven by Flavor
           </h4>
         </div>
-        <div className="section-container container">
+        <div className="section-container  container">
           <div className="mission-container">
             <div className=" d-flex flex-row gap-3 m-3 icon-contain">
               <span>
@@ -113,11 +112,13 @@ const Aboutpage = () => {
             best culinary content at your fingertips.
           </p>
         </div>
-        <div className=" d-flex flex-lg-row flex-sm-column flex-wrap align-items-center justify-content-center the-teams">
+        <div className=" d-flex flex-lg-row  flex-sm-column  flex-wrap  align-items-center justify-content-center the-teams">
           {teamList.map((teamitem) => {
             const { id, image, name, role, bio } = teamitem;
             return (
-              <div key={id} className=" d-flex flex-column align-items-center team-item">
+              <div
+                key={id}
+                className=" d-flex flex-column align-items-center team-item">
                 <img src={image} alt="teamotem-image" className="team-img" />
                 <div className=" text-center text-white team-info">
                   <h4 className="fw-bold fs-4">{name}</h4>
