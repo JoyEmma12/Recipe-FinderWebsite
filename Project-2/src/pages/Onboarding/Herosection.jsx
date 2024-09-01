@@ -1,11 +1,9 @@
 import "./Herosection.css";
-import herofit from "./images/herofit.jpg"
+import trailhero3 from "./images/trailhero2.png";
 import { IoSearch } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-
 const Herosection = () => {
-  
   return (
     <div className="d-flex flex-lg-row flex-sm-column flex-md-column align-items-center align-items-sm-center m-auto justify-content-around carousel">
       <div className=" text-sm-center title">
@@ -23,7 +21,7 @@ const Herosection = () => {
         </Link>
       </div>
       <div className="hero-container">
-        <img src={herofit} alt="image" className=" hero-image" />
+        <img src={trailhero3} alt="image" className=" hero-image" />
       </div>
     </div>
   );

@@ -7,10 +7,10 @@
   position: relative;
 }
 .hero-image {
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  /* height: 500px;
   border-bottom-left-radius: 200px;
-  border-top-right-radius: 200px;
+  border-top-right-radius: 200px; */
   /* height: 500px; */
 
   /* z-index: 100; */
@@ -96,8 +96,9 @@ button::before {
     font-size: 14px;
   }
   .hero-image {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    /* width: 400px;
+    height: 400px; */
   }
   .carousel {
     flex-direction: column;
@@ -120,8 +121,9 @@ button::before {
     font-size: 14px;
   }
   .hero-image {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    /* width: 350px;
+    height: 350px; */
   }
   .carousel {
     flex-direction: column;

@@ -47,7 +47,8 @@
     /* max-width: 100%; */
   }
   .viewrecipe-btn {
-    width: 150px;
+    /* width: 150px; */
+    width: 100%;
     font-size: 14px;
     margin: auto;
   }

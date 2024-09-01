@@ -317,7 +317,7 @@ const Searchpage = () => {
                         />
                       </div>
                       <div className="searchresult-titles text-center">
-                        <h5 className="fs-5 fw-medium text-center">
+                        <h5 className=" fw-medium text-center">
                           {searchitem.title}
                         </h5>
                         <Link
@@ -353,7 +353,7 @@ const Searchpage = () => {
                         />
                       </div>
                       <div className="searchresult-titles">
-                        <h5 className="fs-5 fw-medium text-center">
+                        <h5 className="fw-medium text-center">
                           {result.title}
                         </h5>
                         <Link to={`/recipe/${result.id}`}>
@@ -387,9 +387,7 @@ const Searchpage = () => {
                         />
                       </div>
                       <div className="searchresult-titles">
-                        <h5 className="fs-5 fw-medium text-center">
-                          {type.title}
-                        </h5>
+                        <h5 className=" fw-medium text-center">{type.title}</h5>
                         <Link to={`/recipe/${type.id}`}>
                           <button className="getRecipe-btn">Get Recipe</button>
                         </Link>
@@ -419,7 +417,7 @@ const Searchpage = () => {
                         />
                       </div>
                       <div className="searchresult-titles">
-                        <h5 className="fs-5 fw-medium text-center">
+                        <h5 className=" fw-medium text-center">
                           {dietype.title}
                         </h5>
                         <Link to={`/recipe/${dietype.id}`}>

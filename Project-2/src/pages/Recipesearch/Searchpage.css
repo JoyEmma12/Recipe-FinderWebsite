@@ -92,13 +92,13 @@ categories-btn {
   border: 2px solid var(--tetiary-color);
   background-color: inherit;
   border-radius: 8px;
-  width: 200px;
-  /* max-width: 100%; */
+  /* width: 200px; */
+  width: 100%;
   padding: 10px;
   font-weight: 500;
   color: var(--tetiary-color);
   font-size: 18px;
-  margin: 0px 15px;
+  /* margin: 0px 15px; */
 }
 .getRecipe-btn:hover {
   background-color: var(--tetiary-color);
@@ -112,7 +112,9 @@ categories-btn {
 }
 .searchresult-titles h5 {
   font-size: 16px;
-  word-wrap: break-word;
+}
+.searchresult-titles {
+  width: 100%;
 }
 /* .getRecipe {
   margin: auto;
@@ -120,11 +122,11 @@ categories-btn {
 } */
 
 /* responsiveness */
-@media screen and (max-width: 490px) {
+/* @media screen and (max-width: 490px) {
   .getRecipe-btn {
     width: 25%;
   }
-}
+} */
 @media screen and (max-width: 576px) {
   .search-form {
     flex-direction: column;
@@ -149,7 +151,10 @@ categories-btn {
     width: 90%;
   }
   .getRecipe-btn {
-    margin: 0px 100px;
+    /* margin: 0px 100px; */
+
+    margin: auto;
+    width: 100%;
   }
   .searchresult-titles h5 {
     font-size: 12px;
@@ -167,11 +172,11 @@ categories-btn {
   }
   .recipesearch-item {
     /* max-width: 100%; */
-    width: 45%;
+    width: 70%;
   }
-  .getRecipe-btn {
+  /* .getRecipe-btn {
     margin: 0px 150px;
-  }
+  } */
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .search-form {
@@ -187,7 +192,7 @@ categories-btn {
     /* max-width: 100%; */
     width: 45%;
   }
-  .getRecipe-btn {
+  /* .getRecipe-btn {
     margin: 0px 150px;
-  }
+  } */
 }

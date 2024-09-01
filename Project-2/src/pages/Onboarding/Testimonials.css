@@ -63,6 +63,9 @@
   .testi-item {
     width: 100%;
   }
+  .reviews {
+    width: 100%;
+  }
   .reviews p {
     text-wrap: wrap;
     font-size: 12px;
