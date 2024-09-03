@@ -65,14 +65,10 @@ const Navbar = () => {
             </ul>
           </li>
           <li>
-            <Link to="/aboutpage">
-              About Us
-            </Link>
+            <Link to="/aboutpage">About Us</Link>
           </li>
           <li>
-            <Link to="/contactpage">
-              Contact Us
-            </Link>
+            <Link to="/contactpage">Contact Us</Link>
           </li>
           <li>
             <button className="getstarted-btn">
