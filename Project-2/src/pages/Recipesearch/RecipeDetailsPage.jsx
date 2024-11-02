@@ -30,11 +30,11 @@ const RecipeDetailsPage = () => {
         setRecipeDetails(datas);
         setIngredientsDetails(data2.ingredients);
 
-        // Check if data3 contains at least one element and if it has steps
+       
         if (data3.length > 0 && data3[0].steps) {
           setStepsDetails(data3[0].steps);
         } else {
-          setStepsDetails([]); // Set empty array if no steps are found
+          setStepsDetails([]); 
         }
       } catch (error) {
         console.error("Error Fetching Recipe Details", error);
